@@ -1,66 +1,10 @@
 @use 'variables';
-
-nav{
-    width: 100%;
-    display: flex;
-    height: max-content;
-    flex-direction: row;
-    text-transform: uppercase;
-    .left{  
-            ul{
-                display: inline;
-            li{
-                display: inline;
-                padding-right: 3rem;
-                border-bottom: 1px solid variables.$black;
-                transition: .5s all ease-in-out;
-                a{
-                    text-decoration: none;
-                    font-size: 1.5rem;
-                    color: variables.$black;
-                    transition: .5s all ease-in-out;
-                }
-                &:hover{
-                    a{
-                        color: variables.$cyan;
-                    }
-                    border-bottom: 1px solid variables.$cyan;
-                }
-            }
-        }
-    }
-    .right, .left{
-        width: 40%;
-        display: inline-block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // width: 20%;
-    }
-    .right{
-        ul{
-            li{
-                display: inline;
-                padding-left: 3rem;
-                border-bottom: 1px solid variables.$black;
-                transition: .5s all ease-in-out;
-                a{
-                    text-decoration: none;
-                    font-size: 1.5rem;
-                    color: variables.$black;
-                }
-
-                &:hover{
-                    a{
-                        color: variables.$cyan;
-                    }
-                    border-bottom: 1px solid variables.$cyan;
-                }
-            }
-        }
-    }
-    img{
-        // width: 10rem;
-        width: 20%;
-    }
+@use 'nav';
+@use 'main';
+html{
+    background-color: variables.$white;
+    padding: 1rem;
+}
+body{
+    background-color: variables.$bright;
 }
