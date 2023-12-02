@@ -4,11 +4,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 3rem;
     a{
         text-decoration: none;
         color: variables.$black;
+        transition: variables.$trans;
         .sub{
+            height: 20rem;
             padding: 2rem 0 1rem 0;
             width: 15rem;
             border-top: 1px solid variables.$black;
@@ -24,9 +26,11 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: variables.$trans;
                 i{
                     font-size: 2rem;
                     color: variables.$clay;
+                    transition: variables.$trans;
                 }
             }
             h1{
@@ -36,9 +40,37 @@
                 font-family: monospace;
                 color: variables.$gray;
             }
+            p{
+                width: 15rem;
+                text-align: center;
+                color: variables.$lightergray;
+            }
+            button{
+                width: 10rem;
+                height: 3rem;
+                color: variables.$white;
+                font-size: 1rem;
+                text-transform: uppercase;
+                background-color: variables.$lightergray;
+                border: none;
+                transition: variables.$trans;
+                cursor: pointer;
+            }
+        }
+        &:hover{
+            .icon{
+                background-color: variables.$clay;
+                i{
+                    color: variables.$white;
+                }
+            }
+            button{
+                background-color: variables.$cyan;
+            }
         }
     }
     #sub{
+        height: 20rem;
         padding: 2rem 0 1rem 0;
         width: 15rem;
         border-top: 1px solid variables.$black;
@@ -58,6 +90,12 @@
                 font-size: 2rem;
                 color: variables.$clay;
             }
+            &:hover{
+                background-color: variables.$clay;
+                i{
+                    color: variables.$white;
+                }
+            }
         }
         h1{
             text-transform: uppercase;
@@ -65,6 +103,22 @@
             font-weight: 1;
             font-family: monospace;
             color: variables.$gray;
+        }
+        p{
+            border-bottom: 1px solid variables.$cyan;
+            transition: variables.$trans;
+            a{
+                text-decoration: none;
+                color: variables.$gray;
+                font-weight: 1;
+                font-family: monospace;
+                font-size: 1rem;
+            }
+            &:hover{
+                a{
+                    color: variables.$cyan;
+                }
+            }
         }
     }
 }
