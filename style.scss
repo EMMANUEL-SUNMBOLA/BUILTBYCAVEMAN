@@ -1,6 +1,7 @@
 @use 'variables';
 @use 'nav';
 @use 'main';
+@use 'connect';
 html{
     background-color: variables.$white;
     padding: 1rem;

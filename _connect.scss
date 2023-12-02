@@ -1,0 +1,70 @@
+@use 'variables';
+.connect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    a{
+        text-decoration: none;
+        color: variables.$black;
+        .sub{
+            padding: 2rem 0 1rem 0;
+            width: 15rem;
+            border-top: 1px solid variables.$black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .icon{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                border: 1px solid variables.$clay;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    font-size: 2rem;
+                    color: variables.$clay;
+                }
+            }
+            h1{
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 1;
+                font-family: monospace;
+                color: variables.$gray;
+            }
+        }
+    }
+    #sub{
+        padding: 2rem 0 1rem 0;
+        width: 15rem;
+        border-top: 1px solid variables.$black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .icon{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border: 1px solid variables.$clay;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 2rem;
+                color: variables.$clay;
+            }
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 1;
+            font-family: monospace;
+            color: variables.$gray;
+        }
+    }
+}
