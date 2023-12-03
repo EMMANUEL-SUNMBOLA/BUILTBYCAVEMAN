@@ -1,5 +1,7 @@
-// function putNav(id){
-    const nav = document.querySelector('nav');
-    nav.innerHTML = '<div class="left"><ul><li><a href="index.html">home</a></li><li><a href="work.html">work</a></li><li><a href="about.html">about</a></li></ul></div><div class="center"><h5>BUILT BY</h5><img src="images/logo-plain@2x.png" alt=""></div><div class="right"><ul><li><a href="feed.html">feeds</a></li><li><a href="job.html">jobs</a></li><li><a href="contact.html">contact</a></li></ul></div>';
-// }
-
+let reviews = ['Buffalo created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd', "We're thrilled with the work Buffalo has done creating a website we are truly proud of. We love Jason's innovative design, and have benefitted hugely from Dan's strategic and technical knowledge and advice. In Mozzarella, Buffalo has created a superb and highly intuitive CMS system, meaning the back end works as well as the front looks.", "Reflecting the values of our organisation, Buffalo has transformed our web and mobile device presence, backed by an efficient and reliable team.", "Buffalo were a delight to work with. Not only are they insanely talented but they're great listeners meaning we got a site that we wanted but with their genius on top. ", "We would whole-heartedly recommend the brilliant team at Buffalo."];
+const revD = document.getElementById('review');
+const radio = document.getElementsByClassName('radio');
+radio.addEventListener("click", (event)=>{
+    let revInd = event.getAttribute("rev");
+    revD.innerText = reviews[revInd];
+})
