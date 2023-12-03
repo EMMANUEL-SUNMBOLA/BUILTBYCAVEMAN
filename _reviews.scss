@@ -1,0 +1,29 @@
+@use 'variables';
+
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem 0;
+    .top{
+        width: 70%;
+        #review{
+            transition: variables.$trans;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 1;
+            font-family: monospace;
+            color: variables.$gray;
+        }
+    }
+    .bott{
+        display: flex;
+        gap: 1rem;
+        .radio{
+            transform: scale(2);
+            background-color: red;
+        }
+    }
+}

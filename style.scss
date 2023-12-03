@@ -3,6 +3,7 @@
 @use 'main';
 @use 'connect';
 @use 'partners';
+@use 'reviews';
 html{
     background-color: variables.$white;
     padding: 1rem;
