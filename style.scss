@@ -4,6 +4,7 @@
 @use 'connect';
 @use 'partners';
 @use 'reviews';
+@use 'footer';
 html{
     background-color: variables.$white;
     padding: 1rem;

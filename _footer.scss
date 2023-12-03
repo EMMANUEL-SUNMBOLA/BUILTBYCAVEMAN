@@ -1,0 +1,65 @@
+@use 'variables';
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4{
+        text-align: center;
+        color: variables.$lightergray;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-weight: 1;
+        font-size: 1rem;
+        &:nth-child(2){
+            text-transform: capitalize;
+        }
+        p{
+            a{
+                transition: variables.$trans;
+                text-decoration: none;
+                color: variables.$gray;
+            }
+            border-bottom: 1px solid variables.$cyan;
+            width: max-content;
+            display: inline;
+            text-transform: none;
+            &:hover{
+                a{
+                    color: variables.$cyan;
+                }
+            }
+        }
+    }
+    .partner{
+        display: flex;
+        gap: 2rem;
+        p{
+            transition: variables.$trans;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 0.5;
+            font-family: monospace;
+            color: variables.$gray;
+            text-transform: lowercase;
+            cursor: pointer;
+            i{
+                transition: variables.$trans;
+                color: variables.$lightgray;
+                font-weight: 1000;
+                font-style: italic;
+                font-size: 1.5rem;
+            }
+            &:nth-child(2){
+                text-transform: uppercase;
+            }
+            &:hover{
+                color: variables.$black;
+                i{
+                    color: variables.$black;
+                }
+            }
+        }
+    }
+}
