@@ -1,0 +1,17 @@
+@use 'variables';
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    p{
+        font-size: 1.3rem;
+        font-family: monospace;
+        font-weight: 1;
+        text-transform: uppercase;
+        color: variables.$gray;
+        letter-spacing: 0,5rem;
+    }
+}

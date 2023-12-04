@@ -5,6 +5,8 @@
 @use 'partners';
 @use 'reviews';
 @use 'footer';
+@use 'stats';
+
 html{
     background-color: variables.$white;
     padding: 1rem;
