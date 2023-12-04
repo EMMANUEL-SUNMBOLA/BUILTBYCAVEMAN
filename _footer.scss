@@ -5,6 +5,9 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    hr{
+        width: 65%;
+    }
     h4{
         text-align: center;
         color: variables.$lightergray;

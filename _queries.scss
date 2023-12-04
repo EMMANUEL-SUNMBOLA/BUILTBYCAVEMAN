@@ -2,6 +2,9 @@
 
 //mobile-view
 @media(max-width: 767px) {
+    html{
+        padding: none;
+    }
     nav{
         flex-direction: column;
         align-items: center;
@@ -30,6 +33,15 @@
 
     .connect{
         flex-direction: column;
+        a{
+            width: 80%;
+            .sub{
+                width: 100%;
+            }
+        }
+        #sub{
+            width: 80%;
+        }
     }
 
     main{
