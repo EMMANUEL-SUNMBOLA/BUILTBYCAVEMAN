@@ -6,6 +6,7 @@
 @use 'reviews';
 @use 'footer';
 @use 'stats';
+@use 'queries';
 
 html{
     background-color: variables.$white;
@@ -14,3 +15,6 @@ html{
 body{
     background-color: variables.$bright;
 }
+
+
+

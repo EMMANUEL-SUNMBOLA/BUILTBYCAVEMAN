@@ -2,5 +2,39 @@
 
 //mobile-view
 @media(max-width: 767px) {
-    
+    nav{
+        flex-direction: column;
+        align-items: center;
+        .center{
+            display: block;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            ul{
+                li{
+                    padding: 0;
+                }
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            ul{
+                li{
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .connect{
+        flex-direction: column;
+    }
+
+    main{
+        p{
+            width: 90%;
+        }
+    }
 }

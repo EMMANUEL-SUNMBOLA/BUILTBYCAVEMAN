@@ -8,9 +8,10 @@ nav{
     .left{  
             ul{
                 display: inline;
-            li{
+                li{
                 display: inline;
                 padding-right: 3rem;
+                margin-left: 1rem;
                 border-bottom: 1px solid variables.$black;
                 transition: variables.$trans;
                 a{
@@ -32,7 +33,6 @@ nav{
     }
     .right, .left{
         width: 50%;
-        display: inline-block;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -42,6 +42,7 @@ nav{
             li{
                 display: inline;
                 padding-left: 3rem;
+                margin-left: 1rem;
                 border-bottom: 1px solid variables.$black;
                 transition: variables.$trans;
                 a{
