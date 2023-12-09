@@ -9,13 +9,4 @@ foot.innerHTML = '<hr><h4>we are proud to be reccomended by these fine folks:</h
 const conn = document.getElementById('conn');
 conn.innerHTML = '<a href="#"><div class="sub"><div class="icon" title="proposal planner"><i class="fa-solid fa-map"></i></div><h1>project planner</h1><p>Interested in working with us? Launch a proposal planner to get started</p><button>launch it</button></div></a><div id="sub"><div class="icon" title="Connect"><i class="fa-solid fa-message"></i></div><h1>connect</h1><p><a href="#" id="buffalink">hello@builtbybuffalo.com</a></p></div><a href="#"><div class="sub"><div class="icon" title="Get in touch"><i class="fa-solid fa-calendar"></i></div><h1>calendly</h1><p>Schedule a time to talk to us and get things moving.</p><button>book in</button></div></a>';
 
-document.addEventListener('DOMContentLoaded', ()=>{
 
-    const cdnFontAwe = document.createElement('link');
-    cdnFontAwe.rel = "stylesheet";
-    cdnFontAwe.href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
-    cdnFontAwe.integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==";
-    cdnFontAwe.crossorigin="anonymous";
-    cdnFontAwe.referrerpolicy="no-referrer";
-    document.querySelector('head').appendChild(cdnFontAwe);
-})
