@@ -7,14 +7,35 @@
 @use 'footer';
 @use 'stats';
 @use 'queries';
+@use 'about';
 
 html{
     background-color: variables.$white;
     padding: 1rem;
+    scroll-behavior: smooth;
 }
 body{
     background-color: variables.$bright;
 }
 
+.float{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 7px;
+    background-color: variables.$gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 9%;
+    right: 2%;
+    transition: variables.$trans;
+    &:hover{
+        background-color: variables.$cyan;
+    }
+    i{
+        color: variables.$white;
+    }
+}
 
 
