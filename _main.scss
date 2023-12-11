@@ -14,8 +14,38 @@ main{
         width: 40%;
         font-size: 1.5rem;
         text-align: center;
-
     }
+
+    h4{
+        width: 60%;
+        text-align: center;
+        color: variables.$gray;
+        // text-transform: uppercase;
+        font-family: monospace;
+        font-weight: 1;
+        font-size: 1rem;
+        // &:nth-child(2){
+        //     text-transform: capitalize;
+        // }
+        p{
+            a{
+                transition: variables.$trans;
+                text-decoration: none;
+                color: variables.$black;
+                font-size: 1rem;
+            }
+            border-bottom: 1px solid variables.$cyan;
+            width: max-content;
+            display: inline;
+            text-transform: none;
+            &:hover{
+                a{
+                    color: variables.$cyan;
+                }
+            }
+        }
+    }
+
     .works{
         display: none;
         div{
