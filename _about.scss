@@ -1,5 +1,5 @@
 @use 'variables';
-.about{
+.about, .numbers{
     h2{
         text-align: center;
         color: variables.$black;
@@ -33,7 +33,8 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding: 0 20% 0 20%; 
+        padding: 0 10% 0 10%; 
+        gap: 1rem;
         a{
             text-decoration: none;
             color: variables.$black;
@@ -96,6 +97,44 @@
                 button{
                     background-color: variables.$cyan;
                 }
+            }
+        }
+    }
+}
+
+.numbers{
+    .container{
+        flex-wrap: nowrap;
+        .sub{
+            height: 20rem;
+            width: 15rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .icon{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                border: 1px solid variables.$gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    font-size: 2rem;
+                    color: variables.$lightgray;
+                }
+            }
+            h4{
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 1;
+                font-family: monospace;
+                color: variables.$gray;
+            }
+            p{
+                font-family: Bahianita;
+                color: variables.$clay
             }
         }
     }
