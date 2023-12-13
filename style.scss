@@ -22,7 +22,13 @@ hr{
     width: 65%;
 }
 
+*{
+    scroll-behavior: smooth;
+    // outline: 1px solid red;
+}
+
 .float{
+    // display: none;
     z-index: 10;
     width: 3rem;
     height: 3rem;
