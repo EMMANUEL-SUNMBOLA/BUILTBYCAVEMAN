@@ -160,41 +160,73 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        .sub{
+       .content{ 
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 250px;
-            padding: 2rem;
-            z-index: 2;
-            outline: 1px solid variables.$lightergray;
-            img{
-                object-fit: cover;
+            flex-direction: column;
+            &:hover{
+                .sub{
+                    .text{
+                        opacity: 1;
+                    }
+                }
+                p{
+                    a{
+                        color: variables.$cyan;
+                    }
+                }
             }
-            .text{
-                position: absolute;
-                background-color: variables.$transcyan;
-                width: 100%;
-                height: 100%;
+            .sub{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                opacity: 0;
+                width: 200px;
+                padding: 2rem;
+                z-index: 2;
+                border: 2px solid variables.$lightergray;
                 transition: variables.$trans;
-                &:hover{
-                    opacity: 1;
+                background-color: variables.$white;
+                img{
+                    object-fit: cover;
+                    width: 200px;
                 }
-                h2{
-                    text-align: center;
-                    color: variables.$white;
-                    text-transform: uppercase;
-                    font-family: monospace;
-                    font-weight: 1;
-                    font-size: 1.2rem;
+                #text{
+                    background-color: variables.$transclay;
                 }
+                .text{
+                    position: absolute;
+                    background-color: variables.$transcyan;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: variables.$trans;
+                    h2{
+                        text-align: center;
+                        color: variables.$white;
+                        text-transform: uppercase;
+                        font-family: monospace;
+                        font-weight: 1;
+                        font-size: 1.2rem;
+                    }
+                }
+                clip-path: polygon(51% 0, 100% 26%, 100% 75%, 57% 100%, 0 76%, 0 29%);
+                background-color: variables.$white;
             }
-            clip-path: polygon(51% 0, 100% 26%, 100% 75%, 57% 100%, 0 76%, 0 29%);
-            background-color: variables.$white;
+            p{
+                a{
+                    transition: variables.$trans;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-family: monospace;
+                    color: variables.$gray;
+                }
+                border-bottom: 1px solid variables.$cyan;
+                text-transform: uppercase;
+            }
         }
     }
 }
