@@ -230,3 +230,37 @@
         }
     }
 }
+
+.buffsnap{
+    h2{
+        text-align: center;
+        color: variables.$black;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-weight: 1;
+        font-size: 1.5rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        a{
+            text-decoration: none;
+            .sub{ 
+                // width: max-content;    
+                width: 20rem;
+                height: 30rem;
+                // object-fit: contain;
+                padding: 1rem;
+                background-color: red;
+                clip-path: polygon(51% 0, 100% 26%, 100% 75%, 57% 100%, 0 76%, 0 29%);
+                img{
+                    width: 100%;
+                    height: inherit;
+                }
+            }
+        }
+    }
+}
