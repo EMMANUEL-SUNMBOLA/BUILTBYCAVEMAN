@@ -1,0 +1,67 @@
+@use 'variables';
+
+.intern{
+    padding: 5rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h3{
+        font-size: 2rem;
+        font-weight: 1;
+        color: variables.$black;
+        text-transform: uppercase;
+        font-family: monospace;
+    }
+    h4{
+        font-size: 1rem;
+        font-weight: 1;
+        color: variables.$black;
+        text-transform: uppercase;
+        font-family: monospace; 
+    }
+    button{
+        width: 10rem;
+        height: 2rem;
+        text-transform: uppercase;
+        color: variables.$white;
+        background-color: variables.$clay;
+        transition: variables.$trans;
+        border-radius: 3px;
+        &:hover{
+            background-color: variables.$black;
+        }
+    }
+    p{
+        color: variables.$gray;
+        width: 60%;
+        font-size: 1.3rem;
+        text-align: center;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .honey{
+        clip-path: polygon(51% 0, 100% 26%, 100% 76%, 57% 100%, 0 76%, 0 26%);
+        height: 17rem;
+        width: 13rem;
+        background-color: variables.$cyan;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p{
+                text-transform: uppercase;
+                color: variables.$white;
+                font-size: 1rem;
+                font-weight: 1;
+                font-family: monospace;
+            }
+        }
+    }
+}

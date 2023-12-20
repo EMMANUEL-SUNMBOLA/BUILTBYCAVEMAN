@@ -1,9 +1,11 @@
 @use 'variables';
 main{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1px;
     h1{
         font-family: sans-serif;
         font-size: 5rem;
@@ -11,45 +13,24 @@ main{
     }
     p{
         color: variables.$gray;
-        width: 40%;
+        width: 60%;
         font-size: 1.5rem;
         text-align: center;
-        display: flex;
+        display: inline;
         align-items: center;
         justify-content: center;
         flex-direction: row;
     }
 
-    .link{
-        border-bottom: 1px solid variables.$cyan;
-        width: max-content;
-        // display: inline;
-        text-transform: none;
-        a{
-            transition: variables.$trans;
-            text-decoration: none;
-            color: variables.$black;
-            font-size: 1rem;
-        }
-        &:hover{
-            a{
-                color: variables.$cyan;
-            }
-        }
-    }
+
 
     h4{
-        width: 60%;
+        width: max-content;
         text-align: center;
         color: variables.$gray;
-        // text-transform: uppercase;
         font-family: monospace;
         font-weight: 1;
         font-size: 1rem;
-        // &:nth-child(2){
-        //     text-transform: capitalize;
-        // }
-
         p{
             a{
                 transition: variables.$trans;

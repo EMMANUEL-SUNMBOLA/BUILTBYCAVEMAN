@@ -8,6 +8,7 @@
 @use 'stats';
 @use 'queries';
 @use 'about';
+@use 'intern';
 
 html{
     background-color: variables.$white;
@@ -19,11 +20,15 @@ body{
 }
 
 hr{
-    width: 65%;
+    width: 60%;
+    margin-top: 2rem;
 }
 
 *{
     scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
     // outline: 1px solid red;
 }
 
