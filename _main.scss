@@ -14,6 +14,28 @@ main{
         width: 40%;
         font-size: 1.5rem;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .link{
+        border-bottom: 1px solid variables.$cyan;
+        width: max-content;
+        // display: inline;
+        text-transform: none;
+        a{
+            transition: variables.$trans;
+            text-decoration: none;
+            color: variables.$black;
+            font-size: 1rem;
+        }
+        &:hover{
+            a{
+                color: variables.$cyan;
+            }
+        }
     }
 
     h4{
@@ -27,6 +49,7 @@ main{
         // &:nth-child(2){
         //     text-transform: capitalize;
         // }
+
         p{
             a{
                 transition: variables.$trans;
