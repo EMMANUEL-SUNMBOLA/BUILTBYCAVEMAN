@@ -1,73 +1,79 @@
 @use 'variables';
 nav{
-    width: 100%;
-    display: flex;
-    height: max-content;
-    flex-direction: row;
-    text-transform: uppercase;
-    .left{  
-            ul{
-                display: inline;
-                li{
-                display: inline;
-                padding-right: 3rem;
-                margin-left: 1rem;
-                border-bottom: 1px solid variables.$black;
-                transition: variables.$trans;
-                a{
-                    text-decoration: none;
-                    font-size: 1.2rem;
-                    font-weight: 1;
-                    font-family: monospace;
-                    color: variables.$gray;
-                    transition: variables.$trans;
-                }
-                &:hover{
-                    a{
-                        color: variables.$cyan;
-                    }
-                    border-bottom: 1px solid variables.$cyan;
-                }
-            }
-        }
-    }
-    .right, .left{
-        width: 50%;
+    .nav-big{
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .right{
-        ul{
-            li{
-                display: inline;
-                padding-left: 3rem;
-                margin-left: 1rem;
-                border-bottom: 1px solid variables.$black;
-                transition: variables.$trans;
-                a{
-                    text-decoration: none;
-                    font-size: 1.2rem;
-                    font-weight: 1;
-                    font-family: monospace;
-                    color: variables.$gray;
+        height: max-content;
+        flex-direction: row;
+        text-transform: uppercase;
+        .left{  
+                ul{
+                    display: inline;
+                    li{
+                    display: inline;
+                    padding-right: 3rem;
+                    margin-left: 1rem;
+                    border-bottom: 1px solid variables.$black;
                     transition: variables.$trans;
-                }
-
-                &:hover{
                     a{
-                        color: variables.$cyan;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        font-weight: 1;
+                        font-family: monospace;
+                        color: variables.$gray;
+                        transition: variables.$trans;
                     }
-                    border-bottom: 1px solid variables.$cyan;
+                    &:hover{
+                        a{
+                            color: variables.$cyan;
+                        }
+                        border-bottom: 1px solid variables.$cyan;
+                    }
                 }
             }
         }
-    }
-    .center{
-        text-align: center;
-        img{
-            // width: 10rem;
-            width: 7rem;
+        .right, .left{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        .right{
+            ul{
+                li{
+                    display: inline;
+                    padding-left: 3rem;
+                    margin-left: 1rem;
+                    border-bottom: 1px solid variables.$black;
+                    transition: variables.$trans;
+                    a{
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        font-weight: 1;
+                        font-family: monospace;
+                        color: variables.$gray;
+                        transition: variables.$trans;
+                    }
+
+                    &:hover{
+                        a{
+                            color: variables.$cyan;
+                        }
+                        border-bottom: 1px solid variables.$cyan;
+                    }
+                }
+            }
+        }
+        .center{
+            text-align: center;
+            img{
+                // width: 10rem;
+                width: 7rem;
+            }
+        }
+    }
+
+    .nav-sml{
+        display: none;
     }
 }
