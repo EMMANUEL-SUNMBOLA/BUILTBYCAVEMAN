@@ -245,21 +245,23 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 10px;
         a{
             text-decoration: none;
-            .sub{ 
-                // width: max-content;    
-                width: 20rem;
-                height: 30rem;
-                // object-fit: contain;
-                padding: 1rem;
-                background-color: red;
-                clip-path: polygon(51% 0, 100% 26%, 100% 75%, 57% 100%, 0 76%, 0 29%);
-                img{
-                    width: 100%;
-                    height: inherit;
-                }
+        }
+        .sub{ 
+            // width: max-content;    
+            width: 20rem;
+            height: 30rem;
+            // object-fit: contain;
+            padding: 1rem;
+            // background-color: red;
+            clip-path: polygon(51% 0, 100% 26%, 100% 75%, 57% 100%, 0 76%, 0 29%);
+            img{
+                width: inherit;
+                height: inherit;
+                transform: scale(3);
+                object-fit: cover;
             }
         }
     }
